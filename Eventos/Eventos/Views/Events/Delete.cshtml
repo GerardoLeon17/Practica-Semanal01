@@ -1,0 +1,66 @@
+﻿@model Eventos.Models.Event
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+    <h2 class="display-4">Eliminar</h2>
+
+
+<div>
+  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt class="lead">
+            Titulo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt class="lead">
+            Lugar
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt class="lead">
+            Tipo de evento
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeEvent)
+        </dd>
+
+        <dt class="lead">
+            Dia del evento
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayEvent)
+        </dd>
+
+        <dt class="lead">
+            Capacidad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <h6 class="font-weight-bold">Estas seguro de eliminar tu evento?</h6>
+<div class="form-actions no-color">
+    <input type="submit" value="Delete" class="btn btn-danger" /> 
+    <a href="@Url.Action("Index", "Events")" class=" text-white btn  btn-dark" style="margin-left:20px;">Regresar</a>
+
+</div>
+    }
+</div>

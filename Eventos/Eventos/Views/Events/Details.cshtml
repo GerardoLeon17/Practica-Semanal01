@@ -1,0 +1,66 @@
+﻿@model Eventos.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="display-4">Detalles</h2>
+
+<div class="form-group">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt class="lead">
+            Titulo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt class="lead">
+            Lugar
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt class="lead">
+            Tipo de evento
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeEvent)
+        </dd>
+
+        <dt class="lead">
+            Dia del evento
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayEvent)
+        </dd>
+
+        <dt class="lead">
+            Capacidad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+    </dl>
+    <br />
+    <a href="@Url.Action("Edit", "Events", new { id = Model.Id })" class=" text-white btn btn-warning">Editar</a>
+    <a href="@Url.Action("Index", "Events")" class=" text-white btn  btn-danger" style="margin-left:20px;">Regresar</a>
+    <br />
+
+</div>
+
+
+
+
+
+
+

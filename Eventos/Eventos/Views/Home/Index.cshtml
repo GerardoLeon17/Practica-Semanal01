@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="jumbotron jumbotron-fluid  border border-primary  rounded-0 " style="background-color: #1353b9;">
+    <div class="container">
+        <h1 class="display-1 text-center text-light">Eventos App</h1>
+        <br />
+        <p class="lead text-center text-light font-italic">La mejor aplicacion para realizar cualquier tipo de eventos.</p>
+       
+    </div>
+</div>
+<img src="~/Content/Img/eventos app.jpg" class="img-fluid mx-auto rounded " alt="Evento" style="width:1500px; height:500px;">
+
+
+<h1 class="display-4 text-center">Contamos con diferentes tipos de eventos:</h1>
+<br />
+
+<div class="row" style="">
+    <div class="col-md-4">
+        <div class="card" style="width: 20rem;background-color:#0c7e20">
+            <img src="~/Content/Img/familiar.jpg" class="card-img-top" alt="fam">
+            <div class="card-body">
+                <h5 class="card-title text-center text-white">Familiares</h5>
+                <p class="card-text text-justify text-white">En este tipo de eventos son aptas para todas las edades con divertidas dinamicas para todos.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 20rem; background-color:#9f1a1a">
+            <img src="~/Content/Img/adultos.jpg" class="card-img-top" alt="adul">
+            <div class="card-body">
+                <h5 class="card-title text-white text-center">Adultos</h5>
+                <p class="card-text text-justify text-white">En este tipo de eventos solo son para mayores de de 18 para que tambien se diviertan.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4 float-right">
+        <div class="card text-white" style="width: 20rem ; background-color:#1353b9;">
+            <img src="~/Content/Img/infantil.jpg" class="card-img-top" alt="inf">
+            <div class="card-body">
+                <h5 class="card-title text-center">Infantiles</h5>
+                <p class="card-text text-justify text-white">En este tipo de eventos se centraliza en celebrar cualquier evento infantil , para esos niños que son especiales.</p>
+            </div>
+
+        </div><br />
+    </div>    
+
+    <div class="row ">
+        <div class="col-md-10">
+            <p class="lead text-black text-center">Si deseas organizar un evento da clic en el siguitente boton:</p>
+
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Events")" class=" text-black btn btn-lg btn-outline-info" >Crear</a>
+        </div>
+    </div>
+</div>

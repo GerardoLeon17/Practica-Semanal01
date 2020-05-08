@@ -1,0 +1,35 @@
+﻿@model Eventos.Models.City
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="display-4">Detalles</h2>
+
+<div class="form-group">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt class="lead">
+            Nombre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt class="lead">
+            Codigo postal
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+
+    </dl>
+    <br />
+    <a href="@Url.Action("Edit", "Cities", new { id = Model.Id })" class=" text-white btn btn-warning">Editar</a>
+    <a href="@Url.Action("Index", "Cities")" class=" text-white btn  btn-danger" style="margin-left:20px;">Regresar</a>
+    <br />
+</div>
+
